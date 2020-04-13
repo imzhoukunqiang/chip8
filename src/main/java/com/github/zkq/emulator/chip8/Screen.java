@@ -22,12 +22,18 @@ public class Screen extends Observable {
         return this;
     }
 
-    void setPixels(boolean[][] pixels){
+    public boolean[][] getPixels() {
+        return pixels;
+    }
+
+    void setPixels(boolean[][] pixels) {
         this.pixels = pixels;
         super.notifyObservers(this.pixels);
     }
 
-    public boolean[][] getPixels() {
-        return pixels;
+    void clear() {
+        boolean[][] booleans = new boolean[WIDTH][HIGH];
+        this.setPixels(booleans);
     }
+
 }
