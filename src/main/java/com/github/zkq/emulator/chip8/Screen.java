@@ -18,7 +18,6 @@ public class Screen extends Observable {
 
     Screen setPixel(int x, int y, boolean value) {
         this.pixels[x][y] = value;
-        super.notifyObservers(this.pixels);
         return this;
     }
 
@@ -28,12 +27,13 @@ public class Screen extends Observable {
 
     void setPixels(boolean[][] pixels) {
         this.pixels = pixels;
-        super.notifyObservers(this.pixels);
     }
 
     void clear() {
         boolean[][] booleans = new boolean[WIDTH][HIGH];
         this.setPixels(booleans);
     }
+
+
 
 }
