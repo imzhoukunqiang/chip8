@@ -41,6 +41,7 @@ public class Screen extends Observable {
             }
             pixels >>= 1;
         }
+        super.notifyObservers();
         return r;
     }
 

@@ -6,9 +6,10 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.github.zkq.emulator</groupId>
     <artifactId>chip8</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>a chip8 simulator implemented by java</name>
+    <name>chip8-j</name>
+    <description>a chip8 simulator implemented by java</description>
 
     <build>
         <finalName>chip8</finalName>
@@ -19,11 +20,11 @@
     <dependencies>
 
 
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>28.1-jre</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.google.guava</groupId>-->
+<!--            <artifactId>guava</artifactId>-->
+<!--            <version>28.1-jre</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

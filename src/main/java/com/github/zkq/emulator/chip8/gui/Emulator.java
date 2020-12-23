@@ -1,5 +1,6 @@
 package com.github.zkq.emulator.chip8.gui;
 
+import com.github.zkq.emulator.chip8.core.Chip8;
 import com.github.zkq.emulator.chip8.core.Keyboard;
 import com.github.zkq.emulator.chip8.core.Screen;
 
